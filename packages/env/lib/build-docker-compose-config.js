@@ -65,7 +65,7 @@ function getMounts(
 
 	const coreMount = `${
 		config.coreSource ? config.coreSource.path : wordpressDefault
-	}:/var/www/html`;
+	}:/var/www/html:z`;
 
 	return [
 		...new Set( [
